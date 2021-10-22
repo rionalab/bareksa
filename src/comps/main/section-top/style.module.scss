@@ -16,6 +16,7 @@
         grid-template-columns: 1fr auto;
         button {
             background: transparent;
+            cursor: pointer;
             border:1px solid #ccc;
             padding: 6px 12px 4px;
             align-items: center;
@@ -23,6 +24,14 @@
             grid-template-columns: 1fr auto;
             column-gap: 8px;
             border-radius: 3px;
+            &.dotted {
+                width: 28px;
+                height: 28px;
+                padding: 0;
+                place-items: center;
+                grid-template-columns: 1fr;
+
+            }
             span {
                 font-weight: 600;
                 font-size: 14px;
@@ -55,4 +64,7 @@
         font-size: 24px;
         font-weight: 700;
     }
+}
+.chartContainer {
+    margin-top: 70px;
 }
