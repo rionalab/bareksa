@@ -8,8 +8,7 @@ function SectionTop() {
     const [data, setData] = React.useState([]);
 
     const req = async () => {
-        const url =
-            'https://ae1cdb19-2532-46fa-9b8f-cce01702bb1e.mock.pstmn.io/takehometest/web/dashboard';
+        const url = 'https://ae1cdb19-2532-46fa-9b8f-cce01702bb1e.mock.pstmn.io/takehometest/web/dashboard';
         const resp = await fetch(url);
         const respJson = await resp.json();
 

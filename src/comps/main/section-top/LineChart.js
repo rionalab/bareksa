@@ -1,5 +1,6 @@
 import React from 'react'
 import { Line } from 'react-chartjs-2';
+import ChartHeader from './ChartHeader';
 import Styles from './style.module.scss';
 
 function LineChart({ data }) {
@@ -54,49 +55,7 @@ function LineChart({ data }) {
 
     return (
         <div className={Styles.container}>
-            <div className={Styles.header}>
-                <h1 className='title'>Revenue</h1>
-                <button>
-                    <span>Feb - Mar 2021</span>
-                    <svg
-                        width='16'
-                        height='16'
-                        viewBox='0 0 16 16'
-                        fill='none'
-                        xmlns='http://www.w3.org/2000/svg'>
-                        <path
-                            fillRule='evenodd'
-                            clipRule='evenodd'
-                            d='M2 4.66675C2 3.56218 2.89543 2.66675 4 2.66675H12C13.1046 2.66675 14 3.56218 14 4.66675V12.6667C14 13.7713 13.1046 14.6667 12 14.6667H4C2.89543 14.6667 2 13.7713 2 12.6667V4.66675Z'
-                            stroke='#333333'
-                            strokeWidth='2'
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                        />
-                        <path
-                            d='M10.6667 1.33325V3.99992'
-                            stroke='#333333'
-                            strokeWidth='2'
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                        />
-                        <path
-                            d='M5.33331 1.33325V3.99992'
-                            stroke='#333333'
-                            strokeWidth='2'
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                        />
-                        <path
-                            d='M2 6.66675H14'
-                            stroke='#333333'
-                            strokeWidth='2'
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                        />
-                    </svg>
-                </button>
-            </div>
+            <ChartHeader title="Revenue" type="date" />
             <Line data={newData} options={options} />
             <div className={Styles.footer}>
                 <h6>Total Revenue</h6>
