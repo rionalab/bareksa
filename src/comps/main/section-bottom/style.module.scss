@@ -1,0 +1,66 @@
+.sectionBottom {
+    display: grid;
+    padding: 0 24px 24px;
+    box-sizing: border-box;
+    grid-template-columns: auto 1fr;
+    column-gap: 24px;
+    padding-bottom: 40px;
+    align-items: start;
+}
+
+.datepicker {
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+
+.table {
+    border-radius: 4px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.tableOrder {
+    width: 100%;
+    position: relative;
+    thead {
+        tr {
+            th {
+                text-align: left;
+                padding: 16px 8px ;
+                font-size: 14px;
+                font-weight: 600;
+                background: #f5f5f5;
+                position: sticky;
+                top: 0;
+                letter-spacing: 0.25px;
+                border-bottom: 2px solid #ddd;
+            }
+        }
+    }
+    tbody {
+        tr{
+            td {
+                border-bottom: 1px solid #eee;
+                padding: 16px 8px;
+                color: #333;
+                font-size: 14px;
+                &:nth-child(6),
+                &:nth-child(5){
+                    white-space: nowrap;
+                    width: 1%;
+                    // background: #000;
+                }
+            }
+
+            &:hover {
+                td {
+                    background: #EFF7FF;
+                }
+            }
+        }
+    }
+}
+

@@ -16,7 +16,72 @@ body {
 main {
   margin-top: 95px;
 }
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
 .content {
   background: white;
 }
+.text-center {
+  text-align: center;
+}
+.btn {
+  background: red;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 6px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 8px 24px;
+  &.btn-white {
+    border:1px solid #ddd;
+    background: white;
+  }
+  &.btn-green {
+    background: #82C341;
+    border:1px solid #82C341;
+  }
+}
+.label {
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  padding: 2px 12px 3px;
+  width: 80px;
+  text-align: center;
+  text-transform: capitalize;
+  &.red {
+    background: #D66D4B;
+  }
+  &.green {
+    background: #789764;
+  }
+  &.orange {
+    background: #E69849;
+  }
+}
+.mt-0 {
+  margin-top: 0;
+}
+.rdrInRange {
+  background: #E0DBEB !important;
+}
+.rdrDay:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span,
+.rdrDay:not(.rdrDayPassive) .rdrStartEdge ~ .rdrDayNumber span,
+.rdrDay:not(.rdrDayPassive) .rdrEndEdge ~ .rdrDayNumber span,
+.rdrDay:not(.rdrDayPassive) .rdrSelected ~ .rdrDayNumber span {
+    color: #111 !important;
+}
+.rdrDay:not(.rdrDayPassive) .rdrEndEdge ~ .rdrDayNumber span,
+.rdrDay:not(.rdrDayPassive) .rdrStartEdge ~ .rdrDayNumber span {
+    color: white !important;
+}
+.rdrEndEdge, .rdrStartEdge {
+  background: #8772B0 !important;
+}
+.rdrDayToday .rdrDayNumber span:after {
+  background: #8772B0 !important;
+}
+
 
