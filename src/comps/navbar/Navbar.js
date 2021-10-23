@@ -5,6 +5,7 @@ import User from './user/User';
 import Search from './search/Search';
 import Notification from './notification/Notification';
 import Setting from './setting/Setting';
+import Burger from 'assets/images/menu.png';
 
 function Navbar() {
     return (
@@ -17,6 +18,9 @@ function Navbar() {
                 <Search />
                 <Notification />
                 <Setting />
+            </div>
+            <div className={Styles.mobileMenu}>
+                <img src={Burger} alt="" />
             </div>
         </div>
     );

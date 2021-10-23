@@ -118,3 +118,32 @@
         place-items: center;
     }
 }
+.mobileMenu {
+    display: none;
+    border:1px solid #ddd;
+    border-radius: 4px;
+    place-items: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    img {
+        width: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        grid-template-columns: 1fr 35px;
+        box-sizing: border-box;
+    }
+    .mobileMenu {
+        display: grid;
+    }
+    .user {
+        display: none;
+    }
+    .tools {
+        display: none;
+        background: #000;
+    }
+}

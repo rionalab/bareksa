@@ -7,21 +7,17 @@
     padding-bottom: 40px;
     align-items: start;
 }
-
 .datepicker {
     border-radius: 4px;
     border: 1px solid #E5E5E5;
     padding: 24px;
     box-sizing: border-box;
 }
-
-
 .table {
     border-radius: 4px;
     padding: 24px;
     box-sizing: border-box;
 }
-
 .tableOrder {
     width: 100%;
     position: relative;
@@ -64,3 +60,9 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .sectionBottom {
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+    }
+}
