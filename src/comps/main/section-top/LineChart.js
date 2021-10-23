@@ -5,8 +5,6 @@ import Styles from './style.module.scss';
 
 function LineChart({ data }) {
 
-    const [dataSet, setDataSet] = React.useState(data)
-
     const options = {
         responsive: true,
         plugins: {
@@ -36,7 +34,7 @@ function LineChart({ data }) {
             datasets: [
                 {
                     label: '# of Revenue',
-                    data : dataSet,
+                    data : [100, 140, 250,222, 182, 422, 111],
                     fill: true,
                     backgroundColor: g,
                     tension: 0.2,
@@ -49,13 +47,9 @@ function LineChart({ data }) {
 
     };
 
-    React.useEffect(() => {
-        setDataSet(data)
-    }, [data])
-
     return (
         <div className={Styles.container}>
-            <ChartHeader title="Revenue" type="date" />
+            <ChartHeader title='Revenue' type='date' />
             <Line data={newData} options={options} />
             <div className={Styles.footer}>
                 <h6>Total Revenue</h6>
